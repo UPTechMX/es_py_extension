@@ -1,8 +1,8 @@
-# Muestra extensión del servidor para Oskari
+# Extensión de muestra del servidor para Oskari
 
 Esta es una platilla que puede ser utilizada como base para extender y personalizar el servidor oskari.
 
-Da clíc en el botón "Usar esta plantilla" en el repositorio para crar una copia de los archivos bajo tu nombre de usuario y comienza a personalizarlo.
+Da clíc en el botón "Use this template" en el repositorio para crear una copia de los archivos bajo tu nombre de usuario y comienza a personalizarlo.
 
 Esta aplicación puede ser vista en http://dev.oskari.org.
 
@@ -12,7 +12,7 @@ El contenido inicial y la configuración sobre la base de datos es creada con Fl
  - app-resources/src/main/java/flyway/example
  - app-resources/src/main/resources/flyway/example
 
-Estas migraciones se ejecutan en el orden a la versión y cambiarlas, modificará la aplicación que es creada sobre bases de datos vacías.
+Estas migraciones se ejecutan en el orden de las versiones, y cambiarlas modificará la aplicación que es creada sobre bases de datos vacías.
 
 También puedes renombrar el folder de "example" a algo más apropiado para tu aplicación.
 Nota que esta línea en oskari-ext.properties será utilizada para encontrar los scripts, así que renombrala "example" en ella también:
@@ -33,7 +33,7 @@ Compila con:
     
 Reemplaza oskari-map.war debajo de {jetty.home}/webapps/ con la creada debajo de webapp-map/target 
 
-¡Nota! Si modificars el orden de "vistas" (configuraciones de aplicación) podrías necesitas modificar oskari-ext.properties:
+¡Nota! Si modificas el orden de "vistas" (configuraciones de aplicación) podrías necesitar modificar oskari-ext.properties:
 
     # default view is the first app setup (value is the database id)
     view.default=1
@@ -51,8 +51,8 @@ Para activar el registro de nombre de usuario, configura estos (más informació
     oskari.email.host=<smtp.domain.com>
 
 *¡Nota!* Nosotros actualizarémos las Flyway-migrations existentes en este repositorio para igualar cualquier
- cambio que consideremos como una mejora para esta plantilla. Esto es algo que TU_NO_DEBERIAS_ hacer en tu personalización
- ya que ejecutar migraciones modificadas en una base de datos existente detonara un erro. Esto sólo se hace para mantener la plantilla más simple.
+ cambio que consideremos como una mejora para esta plantilla. Esto es algo que _TU NO DEBERIAS_ hacer en tu personalización
+ ya que ejecutar migraciones modificadas en una base de datos existente detonara un error. Esto sólo se hace para mantener la plantilla más simple.
 
 # Reporte de problemas
 
