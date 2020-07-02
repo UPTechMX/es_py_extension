@@ -90,24 +90,33 @@
             }
 
             #my-navbar span {
-                color: rgb(0, 74, 173);
                 height: 50px;
                 float: left;
                 display: block;
                 text-align: center;
                 padding: 14px 16px;
+                padding-right: 0px;
                 font-weight: 700;
                 font-size: 30px;
                 margin-left: 15px;
             }
 
+            .es-py-blue {
+                color: rgb(0, 74, 173);
+            }
+
+            .es-py-red {
+                color: #eb222a;
+                padding-left: 0px;
+            }
         }
     </style>
     <!-- ############# /css ################# -->
 </head>
 <body>
     <div id="my-navbar">
-        <span>G E O P O R T A L</span>
+        <span class="es-py-blue">G E O P O R T A L</span>
+        <span class="es-py-red">P A R A G U A Y</span>
       </div>
 <nav id="maptools">
     <!--<div id="logobar">
